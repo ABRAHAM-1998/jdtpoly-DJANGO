@@ -1,0 +1,88 @@
+<!-- compEng/templates/compEng/landing.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome to My Site</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            text-align: center;
+        }
+
+        .landing-page {
+            background-color: #fff;
+            max-width: 600px;
+            margin-top: 200px !important;
+            margin: 50px auto;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        h1 {
+            color: #333;
+        }
+
+        p {
+            color: #555;
+        }
+
+        .landing-buttons {
+            margin-top: 20px;
+        }
+
+        a {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+
+        a:hover {
+            background-color: #0056b3;
+        }
+        .title-container{
+            background-color: #8dc7ed;
+            padding: 10px;
+      
+        }
+        .title{
+            display: flex;
+            justify-content: center;
+            font-weight: bolder;
+            font-size: xx-large;
+        }
+        .sub-title{
+            display: flex;
+            justify-content: center;
+            font-weight: bolder;
+            font-size: large;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="title-container">
+        <P class="title">JDT ISLAM POLYTECHNIC COLLEGE</P>
+        <P class="sub-title">COMPUTER ENGINEERING</P>
+
+    </div>
+    <div class="landing-page">
+        <h1>Welcome to JDT Islam Polytechnic College</h1>
+        <p>Explore Django! WebApplication</p>
+
+        <div class="landing-buttons">
+            <a href="{% url 'compEng:login' %}">Login</a>
+            <a href="{% url 'compEng:signup' %}">Sign Up</a>
+        </div>
+    </div>
+</body>
+</html>
